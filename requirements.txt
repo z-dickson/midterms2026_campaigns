@@ -1,0 +1,8 @@
+pandas>=2.2
+pyarrow>=18
+numpy>=1.26
+geopandas>=1.1
+shapely>=2.1
+pyproj>=3.7
+# optional: only for `03_district_shapes.py --preview`
+matplotlib>=3.9

@@ -1,0 +1,20 @@
+# Data stays local: raw inputs, intermediate files and generated site data are never committed.
+data/
+site/data/
+*.parquet
+*.csv
+*.zip
+
+# Python / OS / editor
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Deploy tool state
+.netlify/
+.wrangler/
+node_modules/

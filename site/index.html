@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>What House Candidates Are Running On</title>
+  <meta name="description" content="What 2026 U.S. House candidates say on their campaign websites, compared by party: issues, names, signature phrases, quotes, and a district map with local data centers.">
+  <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#12151b" media="(prefers-color-scheme: dark)">
+  <!-- Social previews. og:image and og:url should be absolute URLs once the site has its address. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What House candidates are running on">
+  <meta property="og:description" content="Democrats and Republicans compared across 866 campaign websites: issues, names, phrases, quotes, and a district map.">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What House candidates are running on">
+  <meta name="twitter:description" content="Democrats and Republicans compared across 866 campaign websites: issues, names, phrases, quotes, and a district map.">
+  <meta name="twitter:image" content="og-image.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+  <div class="cw">
+    <header class="cw-header" id="top">
+      <div class="cw-topbar">
+        <h1 class="cw-title">What House candidates are running on</h1>
+        <button class="cw-share" type="button" id="cw-share">Share this page</button>
+      </div>
+      <p class="cw-lede">Text from the campaign websites of 2026 U.S. House nominees, archived October 29, 2026. Each site is matched against a dictionary of issues, names and phrases, then compared by party.</p>
+      <p class="cw-take">The biggest Democratic tilt is toward <b class="cw-dem-t" data-draw="lead-topic" data-source="leaders" data-where="side=Democratic" data-field="topic">—</b> (<span data-draw="lead-dem" data-source="leaders" data-where="side=Democratic" data-field="dem">—</span> of Democrats' issue talk vs <span data-draw="lead-rep" data-source="leaders" data-where="side=Democratic" data-field="rep">—</span> for Republicans). The biggest Republican tilt is toward <b class="cw-rep-t" data-draw="lead-topic" data-source="leaders" data-where="side=Republican" data-field="topic">—</b> (<span data-draw="lead-rep" data-source="leaders" data-where="side=Republican" data-field="rep">—</span> vs <span data-draw="lead-dem" data-source="leaders" data-where="side=Republican" data-field="dem">—</span>).</p>
+      <div class="cw-vote" id="vote">
+        <span><b>Voting on Tuesday, November 3?</b></span>
+        <span>Find your polling place and sample ballot at <a href="https://www.vote411.org/" target="_blank" rel="noopener noreferrer">Vote411.org</a></span>
+        <span>Check same-day registration and ID rules with <a href="https://www.usa.gov/state-election-office" target="_blank" rel="noopener noreferrer">your state election office</a></span>
+      </div>
+    </header>
+  
+    <div class="cw-strip">
+      <div class="cw-tile"><span class="cw-tile-l"><i class="cw-dot d"></i>Democratic sites analyzed</span><span class="cw-tile-v" data-draw="cov" data-source="coverage" data-where="party=Democrat" data-field="sites_analyzed">—</span><span class="cw-tile-s">of <span data-draw="cov" data-source="coverage" data-where="party=Democrat" data-field="nominees">—</span> nominees</span></div>
+      <div class="cw-tile"><span class="cw-tile-l"><i class="cw-dot r"></i>Republican sites analyzed</span><span class="cw-tile-v" data-draw="cov" data-source="coverage" data-where="party=Republican" data-field="sites_analyzed">—</span><span class="cw-tile-s">of <span data-draw="cov" data-source="coverage" data-where="party=Republican" data-field="nominees">—</span> nominees</span></div>
+      <div class="cw-tile"><span class="cw-tile-l"><i class="cw-dot d"></i>Median Democratic site</span><span class="cw-tile-v" data-draw="cov" data-source="coverage" data-where="party=Democrat" data-field="median_words">—</span><span class="cw-tile-s">words of text</span></div>
+      <div class="cw-tile"><span class="cw-tile-l"><i class="cw-dot r"></i>Median Republican site</span><span class="cw-tile-v" data-draw="cov" data-source="coverage" data-where="party=Republican" data-field="median_words">—</span><span class="cw-tile-s">words of text</span></div>
+    </div>
+  
+    <nav class="cw-tabs" role="tablist" aria-label="Sections">
+      <button class="cw-tab" role="tab" data-tab="issues" aria-selected="true">Issues</button>
+      <button class="cw-tab" role="tab" data-tab="map" aria-selected="false">District map</button>
+      <button class="cw-tab" role="tab" data-tab="names" aria-selected="false">Names &amp; endorsers</button>
+      <button class="cw-tab" role="tab" data-tab="phrases" aria-selected="false">Signature phrases</button>
+      <button class="cw-tab" role="tab" data-tab="quotes" aria-selected="false">Quote finder</button>
+      <button class="cw-tab" role="tab" data-tab="candidates" aria-selected="false">Candidates</button>
+      <button class="cw-tab" role="tab" data-tab="method" aria-selected="false">Method</button>
+    </nav>
+  
+    <section class="cw-page" id="issues" data-page="issues">
+      <div class="cw-card" id="issues-card">
+        <h2>Which issues each party talks about</h2>
+        <p class="cw-note" data-measure-note="attention">Share of issue talk: of all the issue keywords on a candidate's site, the share that belong to this topic, averaged across each party's candidates. This adjusts for Democratic sites being longer.</p>
+        <p class="cw-note" data-measure-note="mention" hidden>Share of candidates whose site mentions the topic at least once. Longer sites are more likely to mention anything, and Democratic sites run longer.</p>
+        <div class="cw-controls">
+          <span class="cw-ctl">Measure
+            <span class="cw-seg" role="group" aria-label="Measure">
+              <button type="button" data-measure="attention" aria-pressed="true">Share of issue talk</button>
+              <button type="button" data-measure="mention" aria-pressed="false">% who mention it</button>
+            </span>
+          </span>
+          <label class="cw-ctl" for="cw-view-issues">Candidates
+            <select id="cw-view-issues" class="cw-view">
+              <option>All candidates</option><option>Incumbent</option><option>Challenger</option><option>Open seat</option>
+            </select>
+          </label>
+          <span class="cw-legend"><span><i class="cw-dot d"></i>Democrats</span><span><i class="cw-dot r"></i>Republicans</span></span>
+        </div>
+        <div class="cw-chart dash-skeleton" id="topic-chart" data-draw="topic-chart" data-source="topics"></div>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="map" data-page="map" hidden>
+      <div class="cw-card" id="map-card">
+        <h2>Find your district</h2>
+        <p class="cw-note">Districts as drawn for the 2026 election, from the Census Bureau's 120th Congress boundaries. Click a district or pick one from the lists to see who is running.</p>
+        <div class="cw-controls">
+          <label class="cw-ctl" for="cw-m-state">State <select id="cw-m-state" data-draw="m-state" data-source="states"></select></label>
+          <label class="cw-ctl" for="cw-m-seat">District <select id="cw-m-seat" data-draw="m-seat" data-source="districts"></select></label>
+          <label class="cw-ctl" for="cw-m-color">Color by <select id="cw-m-color" data-draw="m-color" data-source="topics"></select></label>
+        </div>
+        <div class="cw-legend" data-legend="party">
+          <span><i class="cw-sw f-dem"></i>Democratic incumbent</span><span><i class="cw-sw f-rep"></i>Republican incumbent</span><span><i class="cw-sw f-open"></i>Open seat</span><span><i class="cw-sw f-none"></i>Incumbent not on ballot or unknown</span>
+        </div>
+        <div class="cw-legend" data-legend="topic" hidden>
+          <span><i class="cw-sw f-both"></i>Both parties mention it</span><span><i class="cw-sw f-dem"></i>Only the Democrat</span><span><i class="cw-sw f-rep"></i>Only the Republican</span><span><i class="cw-sw f-open"></i>Neither</span><span><i class="cw-sw f-none"></i>No site text</span>
+        </div>
+        <div class="cw-legend" data-legend="dc" hidden>
+          <span>Data centers operating, approved or proposed:</span>
+          <span><i class="cw-sw f-dc0"></i>None known</span><span><i class="cw-sw f-dc1"></i>1</span><span><i class="cw-sw f-dc2"></i>2–4</span><span><i class="cw-sw f-dc3"></i>5–14</span><span><i class="cw-sw f-dc4"></i>15 or more</span>
+        </div>
+        <div class="cw-mapgrid">
+          <div class="cw-mapbox">
+            <div class="cw-map dash-skeleton" id="district-map" data-draw="map" data-source="districts states candidates dc_districts"></div>
+            <div class="cw-zoom" role="group" aria-label="Map zoom">
+              <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+              <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+              <button type="button" data-zoom="reset">Reset</button>
+            </div>
+          </div>
+          <aside class="cw-panel" id="district-panel">
+            <p class="cw-panel-empty">Click a district on the map to see its candidates.</p>
+            <div class="cw-panel-body" data-draw="panel" data-source="candidates dc_districts dc_sites"></div>
+            <p class="cw-vote-s">Voting here? Find your polling place at <a href="https://www.vote411.org/" target="_blank" rel="noopener noreferrer">Vote411.org</a> or contact <a href="https://www.usa.gov/state-election-office" target="_blank" rel="noopener noreferrer">your state election office</a>.</p>
+          </aside>
+        </div>
+        <p class="cw-note">Drag to pan. Zoom with the buttons, a pinch, or Ctrl and scroll.</p>
+      </div>
+      <div class="cw-card" id="dc-talk-card">
+        <h2>Do candidates talk about data centers where they are being built?</h2>
+        <p class="cw-note">Share of each party's nominees whose site mentions data centers, grouped by how many operating, approved or proposed data centers their district has. Data center locations come from FracTracker Alliance's national data center map.</p>
+        <span class="cw-legend"><span><i class="cw-dot d"></i>Democrats</span><span><i class="cw-dot r"></i>Republicans</span></span>
+        <div class="cw-chart dash-skeleton" id="dc-talk-chart" data-draw="dc-talk" data-source="dc_talk"></div>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="names" data-page="names" hidden>
+      <div class="cw-controls">
+        <label class="cw-ctl" for="cw-view-names">Candidates
+          <select id="cw-view-names" class="cw-view">
+            <option>All candidates</option><option>Incumbent</option><option>Challenger</option><option>Open seat</option>
+          </select>
+        </label>
+        <span class="cw-legend"><span><i class="cw-dot d"></i>Democrats</span><span><i class="cw-dot r"></i>Republicans</span></span>
+      </div>
+      <div class="cw-grid2">
+        <div class="cw-card" id="figures-card">
+          <h2>Who and what they name</h2>
+          <p class="cw-note">Share of each party's candidates whose site names the person or label at least once. A mention can be praise or attack.</p>
+          <div class="cw-chart dash-skeleton" id="figures-chart" data-draw="figures-chart" data-source="names"></div>
+        </div>
+        <div class="cw-card" id="endorsers-card">
+          <h2>Endorsers and allies</h2>
+          <p class="cw-note">Share of each party's candidates whose site names the group, usually on an endorsements page.</p>
+          <div class="cw-chart dash-skeleton" id="endorsers-chart" data-draw="endorsers-chart" data-source="names"></div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="phrases" data-page="phrases" hidden>
+      <div class="cw-controls">
+        <label class="cw-ctl" for="cw-view-phrases">Candidates
+          <select id="cw-view-phrases" class="cw-view">
+            <option>All candidates</option><option>Incumbent</option><option>Challenger</option><option>Open seat</option>
+          </select>
+        </label>
+        <span class="cw-legend"><span><i class="cw-dot d"></i>Democrats</span><span><i class="cw-dot r"></i>Republicans</span></span>
+      </div>
+      <div class="cw-grid2">
+        <div class="cw-card" id="dem-phrases">
+          <h2 class="cw-dem-t">Democratic vocabulary</h2>
+          <p class="cw-note">Share of each party's candidates who use the phrase. The thick bar is Democrats, the thin bar Republicans.</p>
+          <div class="cw-ph" data-draw="phrases-d" data-source="phrases"></div>
+        </div>
+        <div class="cw-card" id="rep-phrases">
+          <h2 class="cw-rep-t">Republican vocabulary</h2>
+          <p class="cw-note">Share of each party's candidates who use the phrase. The thick bar is Republicans, the thin bar Democrats.</p>
+          <div class="cw-ph" data-draw="phrases-r" data-source="phrases"></div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="quotes" data-page="quotes" hidden>
+      <div class="cw-card" id="quote-card">
+        <h2>Quote finder</h2>
+        <p class="cw-note">One sentence per candidate, pulled automatically from the first place their site mentions the topic. Check the candidate's site before you quote it, since some sentences describe an opponent's position.</p>
+        <div class="cw-controls">
+          <label class="cw-ctl" for="cw-q-topic">Topic <select id="cw-q-topic" data-draw="q-topic" data-source="topics"></select></label>
+          <label class="cw-ctl" for="cw-q-party">Party
+            <select id="cw-q-party"><option value="all">Both parties</option><option value="Democrat">Democrats</option><option value="Republican">Republicans</option></select>
+          </label>
+          <label class="cw-ctl" for="cw-q-status">Status
+            <select id="cw-q-status"><option value="all">Any</option><option>Incumbent</option><option>Challenger</option><option>Open seat</option></select>
+          </label>
+          <label class="cw-ctl" for="cw-q-text">Search <input id="cw-q-text" type="search" placeholder="Word, name or state"></label>
+        </div>
+        <div class="cw-quotes" id="quote-list" data-draw="quotes" data-source="quotes candidates"></div>
+        <button class="cw-more" type="button" id="cw-q-more" hidden>Show more quotes</button>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="candidates" data-page="candidates" hidden>
+      <div class="cw-card" id="cand-card">
+        <h2>Every candidate</h2>
+        <p class="cw-note">Top topics are the three that take the largest share of the site's issue talk. Click a column to sort.</p>
+        <div class="cw-controls">
+          <label class="cw-ctl" for="cw-c-text">Search <input id="cw-c-text" type="search" placeholder="Name, seat or topic"></label>
+          <label class="cw-ctl" for="cw-c-party">Party
+            <select id="cw-c-party"><option value="all">Both parties</option><option value="Democrat">Democrats</option><option value="Republican">Republicans</option></select>
+          </label>
+          <p class="cw-count" data-draw="cand-count" data-source="candidates">—</p>
+        </div>
+        <div class="cw-tablewrap">
+          <table class="cw-table" data-source="candidates" data-row-key="nominee_id">
+            <thead><tr>
+              <th data-field="name"><button class="cw-th" type="button" data-sort="name">Candidate</button></th>
+              <th data-field="seat"><button class="cw-th" type="button" data-sort="seat">Seat</button></th>
+              <th data-field="party"><button class="cw-th" type="button" data-sort="party">Party</button></th>
+              <th data-field="status" class="cw-hide-n"><button class="cw-th" type="button" data-sort="status">Status</button></th>
+              <th data-field="words" class="num cw-hide-n"><button class="cw-th" type="button" data-sort="words">Words</button></th>
+              <th data-field="top_topics"><button class="cw-th" type="button" data-sort="top_topics">Top topics</button></th>
+              <th data-field="website" class="cw-hide-n"><button class="cw-th" type="button" data-sort="website">Website</button></th>
+            </tr></thead>
+            <tbody data-draw="cand-rows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  
+    <section class="cw-page" id="method" data-page="method" hidden>
+      <div class="cw-card">
+        <h2>How this was measured</h2>
+        <div class="cw-method">
+          <p>The source is a crawl of each nominee's campaign website: the homepage plus linked pages such as Issues, About and Endorsements. When a live site blocked the crawler, an Internet Archive copy from the same week was used. Sites with almost no text, and nominees with no site, are left out.</p>
+          <p>Before matching, lines about donations, privacy, cookies, text-message terms and online stores are removed, along with repeated lines on the same site.</p>
+          <ul>
+            <li><b>Issues.</b> Each topic is a list of keywords and phrases. For example, "Data centers" matches "data center" and "hyperscale", and "Artificial intelligence" matches "artificial intelligence" and a capitalized "AI".</li>
+            <li><b>Share of issue talk</b> counts every keyword hit on a site, takes each topic's share of that site's total, and averages the shares within each party. Every candidate counts equally, however long their site is.</li>
+            <li><b>% who mention it</b> is the share of a party's candidates with at least one hit.</li>
+            <li><b>Signature phrases</b> were picked by hand from the phrases that differ most between the two parties' sites. Boilerplate such as store and privacy text was skipped.</li>
+          </ul>
+          <p>The district map uses the Census Bureau's 2026 TIGER/Line boundaries for the 120th Congress, which include the districts redrawn before this election. They are clipped to the shoreline and simplified for the web, so lines are approximate up close.</p>
+          <p>Data center locations come from FracTracker Alliance's data center map (downloaded July 28, 2026). Each site is placed in a 2026 district by its coordinates. Sites with low location confidence are left out. "Operating" includes expansions, "proposed" includes pre-proposals, and cancelled or suspended projects are counted separately.</p>
+          <p>Caveats: keyword matching can't tell support from opposition. A Democrat attacking a Republican's abortion record counts as talking about abortion. Endorsement lists, news clips and press releases all count as site text. Incumbent, challenger and open-seat labels come from FEC filings.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="cw-foot">
+    <p>Sources: campaign websites of 2026 U.S. House nominees, archived October 29, 2026. District boundaries from the U.S. Census Bureau (TIGER/Line 2026). Data center locations from FracTracker Alliance.</p>
+    <p>Topics, names and phrases are measured with keyword dictionaries. See the Method tab for details and caveats.</p>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="js/dash.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
