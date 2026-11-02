@@ -197,4 +197,4 @@ a { color: inherit; }
 /* Standalone-site fixes: keep long dropdowns inside narrow screens; drop the map's placeholder height once drawn. */
 .cw-ctl { min-width: 0; max-width: 100%; }
 .cw-ctl select { min-width: 0; max-width: 100%; flex: 0 1 auto; }
-.cw-map:has(svg) { min-height: 0; }
+.cw-map:has(svg), .cw-chart:has(svg) { min-height: 0; }

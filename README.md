@@ -1,5 +1,7 @@
 # What House candidates are running on
 
+**Live dashboard: https://z-dickson.github.io/house-2026/**
+
 A dashboard comparing what Democratic and Republican nominees for the U.S. House say on their 2026 campaign websites: which issues they emphasize, which people and groups they name, their signature phrases, searchable quotes, and a district map that includes local data centers.
 
 The dashboard is a static website (HTML, JavaScript and JSON). It needs no server and can be hosted anywhere that serves files.
@@ -75,6 +77,8 @@ Open it through a local server rather than as a file. Browsers block a page open
 
 Upload the whole `site/` folder, including `site/data/`, to any static host. Options include Netlify (drag and drop the folder at app.netlify.com/drop), Cloudflare Pages, GitHub Pages, or a subfolder of an existing website.
 
+The live version is at https://z-dickson.github.io/house-2026/, served from a folder of a Jekyll site. `./deploy_to_site.sh <folder>` copies an updated build into such a folder. If the host site minifies JavaScript, exclude this folder from that step: the page uses modern syntax (`?.`, `??`) that older minifiers reject.
+
 Note that the generated `site/data/*.json` files become public once the site is hosted, because the page loads them in the browser. They contain derived measures, quotes and the candidate list, not the raw scraped text.
 
 After choosing an address, set `og:image` and `twitter:image` in `site/index.html` to the image's absolute URL (for example `https://example.org/campaign-sites/og-image.png`), and add `og:url`. Social media previews need absolute URLs.
@@ -87,3 +91,7 @@ After choosing an address, set `og:image` and `twitter:image` in `site/index.htm
 - `site/js/app.js`: the charts, map, quote finder and table, drawn with [d3](https://d3js.org/) v7 (loaded from jsDelivr).
 
 The district shapes are projected in Python (an Albers USA-style layout with Alaska and Hawaii insets) and shipped as SVG paths, so the page needs no map library.
+
+## License
+
+Code: MIT (see `LICENSE`). The license covers the code only, not the data sources listed above, which keep their own terms.
