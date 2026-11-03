@@ -603,28 +603,6 @@
     el.replaceChildren(head, ...cards, dcBox);
   });
 
-  dash.calc('dc_talk', {
-    inputs: ['dc_districts', 'candidates'],
-    title: 'Data center talk by local data centers',
-    description: "Share of each party's nominees with site text who mention data centers, grouped by how many operating, approved or proposed data centers are in their district.",
-    fn: (dc_districts, candidates) => {
-      const bins = [['No known data centers', 0, 0], ['1 data center', 1, 1], ['2 to 4', 2, 4], ['5 to 14', 5, 14], ['15 or more', 15, Infinity]];
-      const active = new Map(dc_districts.map((d) => [d.seat, d.active]));
-      return bins.map(([group, lo, hi]) => {
-        const cs = candidates.filter((c) => c.words > 0 && (active.get(c.seat) ?? 0) >= lo && (active.get(c.seat) ?? 0) <= hi);
-        const share = (p) => {
-          const x = cs.filter((c) => c.party === p);
-          return x.length ? x.filter((c) => c.mentioned.split('; ').includes('Data centers')).length / x.length : 0;
-        };
-        return { group, districts: new Set(cs.map((c) => c.seat)).size, dem_share: share('Democrat'), rep_share: share('Republican') };
-      });
-    },
-  });
-  dash.draw('dc-talk', (el) => {
-    const g = dash.data('dc_talk');
-    if (cw.notReady(el, g)) return;
-    cw.dumbbell(el, g.data.map((r) => ({ label: `${r.group} (${r.districts} districts)`, d: r.dem_share, r: r.rep_share })), {});
-  });
 
 }
 
